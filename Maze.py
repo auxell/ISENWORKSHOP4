@@ -71,7 +71,8 @@ if __name__ == "__main__":
         else:
             cell = grid[Row][Col]
             if cell == EMPTY:
-            grid[Row][Col] = VISITED
+                grid[Row][Col] = VISITED
+        
         elif cell == WALL:
             done = True
             print("You stumble blindly into a solid concrete wall.")
@@ -80,6 +81,9 @@ if __name__ == "__main__":
             done = True
             solved = True
             print("SOLVED!")
+        
+        elif cell == END:
+
         else:
             pass # Do nothing
      
